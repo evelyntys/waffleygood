@@ -1,0 +1,333 @@
+html, body {
+  height: 100%;
+  width: 100%;
+/*   do you want to change all the fonts to barlow condensed?? */
+/*   font-family: "Barlow Condensed", sans-serif; */
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* -----main page styling----- */
+
+/* navbar styling  */
+.navbar{
+    min-height: 60px;
+    width: 100vw;
+    flex: nowrap;
+  }
+
+.logo-navbar{
+  height:60px;
+  width:auto;
+}
+
+  .nav-link {
+    color: #987654 !important;
+    letter-spacing: 2px;
+    font-weight:bold;
+    font-size: 1.2rem;
+  }
+
+.toggler{
+  color: #987654;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    box-shadow: none;
+}
+
+  .nav-link:hover{
+    color:#794c34 !important; 
+}
+
+.dropdown-item{
+  color:  #B37A4C !important;
+  border: none;
+  letter-spacing:2px;
+}
+
+.dropdown-item:hover{
+  background-color: #f5f0e8;  
+}
+
+.btn-info{
+  background-color: #987654;
+  color: white !important;
+  font-weight: bold;
+  border:none;
+  font-size: 1.2rem;
+}
+
+.btn-info:hover, .btn-info:active, .btn-info:focus{
+  background-color:#794c34;
+  box-shadow: none;
+}
+
+.bi{
+    color: #987654 !important;
+    margin-right: 5px;
+    margin-top: 0px
+  }
+
+  .bi:hover{
+      color:#794c34 !important; 
+  }
+/* -------------------------------------------------- */
+
+
+/* title image styling */
+.title-image-main {
+  height: 300px;
+  background-image:url(pictures/main/title-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title-image-aboutus{
+  height: 300px;
+  background-image:url(pictures/aboutus/aboutus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title-image-menu{
+  height: 300px;
+  background-image:url(pictures/menu/menu.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title-image-booking{
+  height: 300px;
+  background-image:url(pictures/booking/booking.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;    
+  height:100%;
+  width:100%;
+}
+
+.title-text>h1{
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.title-text>h5{
+ font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+/* -------------------------------------------------- */
+
+/* home page picture links  */
+.pic-container {
+  position: relative;
+  text-align: center;
+}
+
+.pic-links {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.btn-light {
+  color: #987654 !important;
+}
+
+.pic-links>a {
+  text-decoration: none;
+}
+
+.pic-container:hover .pic-links {
+  opacity: 1;
+}
+
+#carouselExampleIndicators {
+  max-width: 350px;
+  max-height: 350px;
+  margin: auto;
+}
+
+.carousel-item{
+  position: relative;
+  text-align: center;
+}
+
+.carousel-pic-links {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* -------------------------------------------------- */
+
+/* booking form */
+.form-wrapping{
+  max-width: 650px;
+  background-color: #e8ccb0; 
+  border:2px solid #e8ccb0;
+/*   border-radius:5px; */
+}
+
+.form>h1{
+  border-bottom: 4px dotted black;
+}
+
+/* about-us styling */
+.about-us-img>img{
+  height: auto;
+  width: 100%;
+  border: 1px white;
+  border-radius: 4px;
+}
+
+.about-us>h1{
+  color: white !important;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+/*     idk  whether it looks better in a card or just give the h1 a background     i think the card is not bad!! */ 
+.mission>h1{
+  color: white !important;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: #987654;
+  border:1px solid #987654;
+  border-radius: 4px;
+}
+.bg-dark{
+  background-color: #987654 !important;
+}
+
+.about-us>p, .mission>p{
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* -------------------------------------------------- */
+
+/* -----menu page styling----- */
+/* Menu Section Nav */
+.badge{
+  background-color: #987654;
+  text-decoration:none;
+}
+.badge:hover{
+  background-color: #795c34;
+  color: white !important;
+  text-decoration:none;
+}
+
+/* Menu Listings */
+#waffles-menu{
+  height: 935px;
+  background-color:#e8ccb0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+}
+
+.menu-header{
+  background-color: #f8f9fa;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #795c34;
+}
+
+.menu-card {
+  height: 351px;
+  width: 217px;
+  text-align: center;
+}
+
+.menu-title, .price{
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.price{
+  background-color: rgba(232,204,176,0.2)
+}
+
+.drinks-menu-card {
+  height: 301px;
+  width: 217px;
+  text-align: center;
+}
+
+#drinks-menu{
+  height:835px;
+  background-color: #e8ccb0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+}
+/* -------------------------------------------------- */
+
+
+/* footer  */
+footer {
+  width: 100vw;
+  background-color: #bc9e82;
+  font-family:"Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+footer h4{
+  font-family:"Dancing Script", cursive;
+  font-weight:600;
+}
+
+.logo{
+  max-width: 150px;
+  height:auto;
+}
+
+/* screen size responsiveness  */
+/* ipad 768px */
+@media screen and (min-width: 768px) {
+  .title-image {
+    height: 400px;
+  }
+}
+
+/* 992px */
+@media screen and (min-width: 992px) {
+  .title-image {
+    height: 500px;
+  }
+  .logo-navbar{
+  height:80px;
+  width:auto;
+}
+}

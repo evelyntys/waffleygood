@@ -1,0 +1,193 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--   google fonts css -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="icon" href="pictures/icon.png">
+
+  <!-- own css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>WAFFLEYGOOD - About Us</title>
+</head>
+  
+  
+  <body>
+    
+<!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pe-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="pictures/main/waffleygood.png" class="logo-navbar" alt=""></a>  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa-solid fa-bars toggler"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex align-items-baseline">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link active" href="aboutus.html">About Us</a> 
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mb-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="menu.html#waffles-menu">Waffles</a></li>
+            <li><a class="dropdown-item" href="menu.html#drinks-menu">Drinks</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link active" href="booking.html"><button type="button" class="btn btn-info">Book a table</button></a></li>
+      </ul>
+       <ul class="navbar-nav ms-auto mt-2">
+          <li class="nav-item-socials pb-3">
+            <a href="https://www.facebook.com/Waffley-265843376952499"><i class="bi bi-facebook fa-lg"></i></a> 
+      <a href="https://twitter.com/waffleygood"><i class="bi bi-twitter fa-lg"></i></a>
+      <a href="https://www.instagram.com/accounts/login/?next=/WAFFLEYGOODCOMPANY/"><i class="bi bi-instagram fa-lg"></i></a>  
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class=title-head">
+    <div class="title-image-booking">
+      <div class="overlay d-flex justify-content-center align-items-center text-center">
+        <div class="title-text">
+          <h1>Book A Table</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Form -->
+<section>
+  <div class="form-wrapping px-5 pt-4 pb-5 mx-auto my-md-5">
+   <div class="form">
+     <h1 class="text-center mb-4 pb-2">Make a Reservation</h1>
+     <div class="row">
+       <label for="name" class="form-label ms-1"><i class="fa-solid fa-user"></i> Name</label>
+       <div id="name" class="input-group">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Mr</option>
+          <option value="Ms">Ms</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Mdm">Mdm</option>
+          <option value="Dr">Dr</option>
+        </select>
+        <input type="text" aria-label="Name" placeholder="e.g. John Smith" class="form-control">
+        </div>
+     </div>
+     <div class="mt-3">
+       <label for="phone" class="form-label ms-1"><i class="fa-solid fa-mobile-screen-button"></i> Phone Number</label>
+       <input type="text" id="phone"aria-label="Phone Number" class="form-control col-12">
+     </div>
+     <div class="mt-3">
+       <label for="party-size" class="form-label ms-1"><i class="fa-solid fa-users"></i> Party Size</label>
+       <select id="party-size" class="form-select col-12" aria-label="Default select example">
+          <option selected>1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+          <option value="5">5 People</option>
+          <option value="6">6 People</option>
+          <option value="7">7 People</option>
+          <option value="8">8 People</option>
+          <option value="9">9 People</option>
+          <option value="10">10 People</option>
+       </select>
+     </div>
+     <div class="row">
+       <div class="col-12 col-md-6 mt-3">
+          <label for="date" class="form-label ms-1"><i class="fa-solid fa-calendar-day"></i> Date</label>
+         <input type='date' id='date' class='form-control'>
+       </div>
+       <div class="col-12 col-md-6 mt-3">
+         <label for="time" class="form-label ms-1 "><i class="fa-solid fa-clock"></i> Time</label>
+          <select id="time" class="form-select" aria-label="Default select example">
+            <option selected>--select time--</option>
+            <option>1000</option>
+            <option>1030</option>
+            <option>1100</option>
+            <option>1130</option>
+            <option>1200</option>
+            <option>1230</option>
+            <option>1300</option>
+            <option>1330</option>
+            <option>1400</option>
+            <option>1430</option>
+            <option>1500</option>
+            <option>1530</option>
+            <option>1500</option>
+            <option>1530</option>
+            <option>1600</option>
+          </select>
+       </div>
+      </div>
+     <div class="my-3">
+       <label for="message" class="form-label ms-1"><i class="fa-solid fa-envelope-open-text"></i> Additional Comments</label>
+       <textarea class="form-control col-12" id="message" rows="3" placeholder="Enter your message here"></textarea>
+     </div>
+     <div class="d-grid">
+     <button type="button" class="btn btn-info">Submit</button>
+     </div>
+   </div>
+  </div>
+</section>
+ 
+
+<!-- footer -->
+  <footer class="pb-4">
+    <div class="container-fluid">
+      <div class="row pt-4 px-3">
+        <div class="col-12 col-md-4 py-2 ps-md-5 d-inline-flex justify-content-center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9204.957509767612!2d-1.5728506!3d54.775759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x29473a655f524e93!2sWaffley%20Good%20Company!5e0!3m2!1sen!2ssg!4v1652342271683!5m2!1sen!2ssg" width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 py-2 px-5 py-sm-none pe-sm-none ps-md-none">
+          <div class="address">
+            <h4>Address</h4>
+            95 Elvet Bridge, Durham, DH1 3AG, United Kingdom
+          </div>
+          <div class="opening mt-4">
+            <h4>Opening Hours</h4>
+            Wednesday-Monday: 1000 - 1630<br>
+            Tuesdays: Closed<br>
+            Closed for the month of August<br>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 py-2 px-5 py-sm-none ps-sm-none pe-md-none contact">
+          <h4>Contact Us</h4>
+          <div class='phone'><i class="fa-solid fa-phone pe-2"></i> 0191 384 0462</div>
+          <div class="email"><i class="fa-solid fa-square-envelope pe-2"></i> waffleygoodcompany@gmail.com</div>
+          <div class="m-2 mx-auto"><img src="pictures/main/waffleygood.png" class="logo" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
